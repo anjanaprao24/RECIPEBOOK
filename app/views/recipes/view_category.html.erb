@@ -1,0 +1,20 @@
+<h1>Choose categories</h1>
+<% @categories.each do |category| %>
+<li class="col-sm-4">
+<div class="thumbnails">
+  
+<h2> 
+ 
+<b><%= link_to "#{category.name}" , list_recipe_items_path(:id => category.id) %></h2></b>
+     <h4 class="tag">Find unique dishes in this category</h4>   
+
+    
+</div>
+ 
+<br>
+
+<% end %>
+</li>
+<br/>
+
+

@@ -1,0 +1,35 @@
+
+
+<hr>
+<ol class="breadcrumb">
+ <li><a href="/recipes/view_category">< Choose Category</a></li>
+ 
+</ol>
+<p id="notice"><%= notice %></p>
+<% if current_user %>
+<% if @item.user_id == current_user.id %>
+<%= render 'panel' %>
+<% end %>
+<% end %>
+  <b>Name:</b>
+  <%= @item.item_name %><br><br>
+  <b>Pic:</b>  <%= image_tag(@item.pic.url) %><br><br>
+   <b>Description:</b> <%= @item.description.to_s.html_safe %><br><br>
+</p>
+
+<br><br>
+<b>Rate the Recipe</b>
+<img src="/assets/like.jpeg" width="30" height="30"/>
+<th><%= link_to "LIKE", {:action => 'like_count', :id => @item.id } %></th>
+<span class="badge"><%= @item.likes %></span>
+
+<br><br>
+
+<b> Share The Recipe with your friends: </b><br>
+<%= form_tag("/welcome_mailer/welcome" , :method=>"post") do %>
+<input type="text" placeholder="Enter Email" name="email"/>
+<input type="hidden" value="<%= @item.id %>" name="body"/><br>
+<%=  submit_tag "SHARE" , :class=>"btn btn-warning" %>
+<% end %>
+
+

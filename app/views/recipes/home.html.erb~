@@ -1,0 +1,32 @@
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <b>TOP RATED RECIPES</b>
+  </div>
+  <div class="panel-body">
+  <table>
+ <% @most_liked.each do |recipe| %>
+ <tr>
+ <th style="border:2px solid whitesmoke"><%= image_tag recipe.pic.url(:thumb) %></th>
+ <th><%= link_to recipe.item_name , item_path(:id=>recipe.id) %></th>
+ </tr>
+ <% end %>
+ </table>
+ </div>
+</div>
+
+
+<br>
+<div class="wrapper">
+ <div id="pics"> 
+  <% @new_recipe.each do |recipe| %>
+ <img src="<%= recipe.pic %>" /> 
+ <% end %>
+ </div>
+  <div class="ribbon-wrapper-green">
+  <div class="ribbon-green">NEW</div>
+  </div>
+</div>
+
+<br><br>
+
+

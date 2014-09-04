@@ -1,0 +1,7 @@
+<div class="panel panel-warning">
+<h5>
+<%= link_to '<- My Recipies', my_recipe_users_path %> | 
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Destroy', @item , method: :delete, data: { confirm: 'Are you sure?' } %>
+  </h5>
+</div>

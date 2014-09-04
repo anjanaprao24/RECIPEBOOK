@@ -1,0 +1,34 @@
+<%= tinymce_assets %><%= tinymce %>
+<%= form_for @item , :html => { :multipart => true } do |f| %>
+  <% if @item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+      <% @item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+   <div class="form-group">
+    <%= f.label :category %><br />
+  <%= collection_select(:item, :category_id, Category.all, :id, :name, {:prompt => false }, {:class=>"form-control"})  %>
+   </div>
+  <div class="form-group">
+    <%= f.label :item_name %><br />
+    <%= f.text_field :item_name , :class=>"form-control"%>
+  </div>
+ <div class="form-group">
+    <%= f.label :pic %><br />
+    <%= f.file_field :pic %>
+  </div>
+ <div class="form-group">
+    <%= f.label :description %><br />
+    <%= f.text_area :description , :class => "tinymce" , :rows=>9 , :cols=>20 %>
+  </div> 
+    
+   <div class="actions">
+     <%= submit_tag "CREATE RECIPE" , :class=>"btn btn-warning"  %></p>
+  </div>
+<% end %>

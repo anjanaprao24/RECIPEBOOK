@@ -1,0 +1,40 @@
+<h3>User Profile</h3><br>
+
+   <%= form_tag("/recipes/updateprofile"  , :method=>"get" , :multipart=> true ) do  %>
+   <div class="form-group">
+   <table>
+   <tr>
+   <th>Email:</th>
+   <td><input type="text" class="form-control" value="<%= current_user.email %>" name="email"/></td>
+   
+   </tr>
+   <tr><th>&nbsp;</th><td>&nbsp;</td></tr>
+   <tr>
+   <th>Address:</th>
+   <td>
+<input type="text" class="form-control"  name="address" value="<%= current_user.address %>"/>
+</td>
+   </tr>
+     <tr><th>&nbsp;</th><td>&nbsp;</td></tr>
+    <tr>
+   <th>Interests:</th>
+ <td>
+<input type="text" class="form-control"  name="hobbies" value="<%= current_user.hobbies %>"/>
+    </td>
+   </tr>
+    <tr><th>&nbsp;</th><td>&nbsp;</td></tr>
+   <tr>
+   <th>Profile Pic:</th>
+   <td><% if current_user.pic.exists? %>
+        <%= image_tag current_user.pic.url %>
+        <%= image_tag current_user.pic.path %>
+    <% end %>
+  
+
+      <%= file_field_tag :pic %>
+   </td>
+   </tr>
+   </table><br><br>
+ </div> 
+<%=  submit_tag "SAVE" , :class=>"btn btn-warning" %>
+<% end %>

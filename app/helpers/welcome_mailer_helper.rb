@@ -1,0 +1,2 @@
+module WelcomeMailerHelper
+end

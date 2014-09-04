@@ -1,0 +1,24 @@
+<h1>Listing Recipies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.item_name %></td>
+    <td><%= link_to 'Show' , admin_path(:id => item) %></td>
+    <td><%= link_to 'Edit', edit_admin_path(item) %></td>
+    <td><%= link_to 'Destroy', item , method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+
