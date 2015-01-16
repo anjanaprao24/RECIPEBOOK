@@ -67,8 +67,8 @@ config.action_mailer.smtp_settings = {
 :address => "smtp.gmail.com",
 :port => 587,
 :domain => "mail.google.com",
-:user_name => "anjanaprao24@gmail.com",
-:password => "chandra&sulo007",
+:user_name => "recipebookapp@gmail.com",
+:password => "recipebooksite91",
 :authentication => :plain,
 :enable_starttls_auto => true
 }

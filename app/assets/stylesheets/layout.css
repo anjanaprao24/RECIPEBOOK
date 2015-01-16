@@ -295,3 +295,156 @@ a img {
 .nav-pills li a{
     color: black;
 }
+
+@media screen and (min-width: 240px) and (max-width: 320px)
+{
+    input#search
+    {
+        position: absolute;
+        left: -180px;
+    }
+    button#search_btn
+    {
+        position: relative;
+        left: 15px;
+        top: 0px;
+    }
+    div#right
+    {
+        position: absolute;
+        top: 400px;
+        left: 680px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    div#sidebar
+    {
+        position: absolute;
+        left: -19px;
+        top: 92px;
+        width: 180px;
+    }
+    input#search
+    {
+        position: aboulte;
+        top: 30px;
+        left: -15px;
+    }
+    button#search_btn
+    {
+        position: absolute;
+        top: 32px;
+        left: 210px;
+    }
+    div#footerWrapper
+    {
+        position: relative;
+        top: 168px;
+        left: -24px;
+        width: 877px;
+        text-align: center;
+    }
+    div#footer p
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:768px)
+{
+    div#footerWrapper
+    {
+        position: relative;
+        top: 168px;
+        left: -24px;
+        width: 877px;
+        text-align: center;
+    }
+    div#footer p
+    {
+        text-align: center;
+    }
+    div#sidebar
+    {
+        position: absolute;
+        left: -192px;
+        top: 92px;
+        width: 180px;
+    }
+    input#search
+    {
+        position: aboulte;
+        top: 30px;
+        left: -189px;
+    }
+    button#search_btn
+    {
+        position: absolute;
+        top: 30px;
+        left: 36px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px)
+{
+    input#search
+    {
+        position: aboulte;
+        top: 30px;
+        left: -145px;
+    }
+    button#search_btn
+    {
+        position: relative;
+        left: 60px;
+        top: 2px;
+    }
+    div#sidebar
+    {
+        position: absolute;
+        left: -160px;
+        top: 95px;
+        width: 180px;
+    }
+}
+
+@media screen and (min-width:1281px)and (max-width:1600px)
+{
+    input#search
+    {
+        position: aboulte;
+        top: 30px;
+        left: 139px;
+    }
+    div#sidebar
+    {
+        position: absolute;
+        left: 122px;
+        top: 92px;
+        width: 180px;
+    }
+@media screen and (min-width:1281px)and (max-width:1600px)
+{
+    button#search_btn
+    {
+        position: absolute;
+        top: 30px;
+        left: 358px;
+    }
+}
+
+    div#footerWrapper
+    {
+        position: relative;
+        top: 168px;
+        left: -24px;
+        width: 877px;
+        text-align: center;
+    }
+    div#footer p
+    {
+        text-align: center;
+    }
+}
