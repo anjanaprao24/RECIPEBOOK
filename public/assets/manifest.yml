@@ -1,8 +1,11 @@
 ---
+<<<<<<< HEAD
 420X405_17.jpg: 420X405_17.jpg
 420X405_17/index.jpg: 420X405_17.jpg
 css/banner.jpg: css/banner.jpg
 css/banner/index.jpg: css/banner.jpg
+=======
+>>>>>>> 95dd7409f324cd6387f9de332b68998284e0e953
 css/bg_web.jpeg: css/bg_web.jpeg
 css/bg_web/index.jpeg: css/bg_web.jpeg
 css/footerWrapper-bg.jpg: css/footerWrapper-bg.jpg
@@ -13,6 +16,11 @@ css/hmenu-sel.jpg: css/hmenu-sel.jpg
 css/hmenu-sel/index.jpg: css/hmenu-sel.jpg
 css/hmenu.jpg: css/hmenu.jpg
 css/hmenu/index.jpg: css/hmenu.jpg
+<<<<<<< HEAD
+=======
+css/page-bg.jpg: css/page-bg.jpg
+css/page-bg/index.jpg: css/page-bg.jpg
+>>>>>>> 95dd7409f324cd6387f9de332b68998284e0e953
 css/page-vbg.jpg: css/page-vbg.jpg
 css/page-vbg/index.jpg: css/page-vbg.jpg
 facebook.jpeg: facebook.jpeg
@@ -25,8 +33,11 @@ food3.jpeg: food3.jpeg
 food3/index.jpeg: food3.jpeg
 gmail.png: gmail.png
 gmail/index.png: gmail.png
+<<<<<<< HEAD
 like.jpeg: like.jpeg
 like/index.jpeg: like.jpeg
+=======
+>>>>>>> 95dd7409f324cd6387f9de332b68998284e0e953
 rails.png: rails.png
 rails/index.png: rails.png
 twitter.jpeg: twitter.jpeg
@@ -120,6 +131,7 @@ tinymce/skins/lightgray/img/trans.gif: tinymce/skins/lightgray/img/trans.gif
 tinymce/skins/lightgray/img/trans/index.gif: tinymce/skins/lightgray/img/trans/index.gif
 jquery.min.map: jquery.min.map
 jquery/index.min.map: jquery.min.map
+<<<<<<< HEAD
 tinymce/plugins/importcss/plugin.js: tinymce/plugins/importcss/plugin.js
 tinymce/plugins/pagebreak/plugin.js: tinymce/plugins/pagebreak/plugin.js
 tinymce/plugins/link/plugin.js: tinymce/plugins/link/plugin.js
@@ -171,3 +183,56 @@ tinymce/skins/lightgray/content.min.css: tinymce/skins/lightgray/content.min.css
 tinymce/skins/lightgray/skin.min.css: tinymce/skins/lightgray/skin.min.css
 tinymce/skins/lightgray/content.inline.min.css: tinymce/skins/lightgray/content.inline.min.css
 tinymce/skins/lightgray/skin.ie7.min.css: tinymce/skins/lightgray/skin.ie7.min.css
+=======
+tinymce/jquery.tinymce.js: tinymce/jquery.tinymce.js
+tinymce/tinymce.jquery.js: tinymce/tinymce.jquery.js
+tinymce/themes/modern/theme.js: tinymce/themes/modern/theme.js
+tinymce/plugins/image/plugin.js: tinymce/plugins/image/plugin.js
+tinymce/plugins/template/plugin.js: tinymce/plugins/template/plugin.js
+tinymce/plugins/anchor/plugin.js: tinymce/plugins/anchor/plugin.js
+tinymce/plugins/fullscreen/plugin.js: tinymce/plugins/fullscreen/plugin.js
+tinymce/plugins/importcss/plugin.js: tinymce/plugins/importcss/plugin.js
+tinymce/plugins/layer/plugin.js: tinymce/plugins/layer/plugin.js
+tinymce/plugins/textcolor/plugin.js: tinymce/plugins/textcolor/plugin.js
+tinymce/plugins/paste/plugin.js: tinymce/plugins/paste/plugin.js
+tinymce/plugins/autosave/plugin.js: tinymce/plugins/autosave/plugin.js
+tinymce/plugins/legacyoutput/plugin.js: tinymce/plugins/legacyoutput/plugin.js
+tinymce/plugins/nonbreaking/plugin.js: tinymce/plugins/nonbreaking/plugin.js
+tinymce/plugins/fullpage/plugin.js: tinymce/plugins/fullpage/plugin.js
+tinymce/plugins/insertdatetime/plugin.js: tinymce/plugins/insertdatetime/plugin.js
+tinymce/plugins/emoticons/plugin.js: tinymce/plugins/emoticons/plugin.js
+tinymce/plugins/example/plugin.js: tinymce/plugins/example/plugin.js
+tinymce/plugins/visualblocks/plugin.js: tinymce/plugins/visualblocks/plugin.js
+tinymce/plugins/visualblocks/css/visualblocks.css: tinymce/plugins/visualblocks/css/visualblocks.css
+tinymce/plugins/bbcode/plugin.js: tinymce/plugins/bbcode/plugin.js
+tinymce/plugins/spellchecker/plugin.js: tinymce/plugins/spellchecker/plugin.js
+tinymce/plugins/tabfocus/plugin.js: tinymce/plugins/tabfocus/plugin.js
+tinymce/plugins/wordcount/plugin.js: tinymce/plugins/wordcount/plugin.js
+tinymce/plugins/table/plugin.js: tinymce/plugins/table/plugin.js
+tinymce/plugins/preview/plugin.js: tinymce/plugins/preview/plugin.js
+tinymce/plugins/autolink/plugin.js: tinymce/plugins/autolink/plugin.js
+tinymce/plugins/autoresize/plugin.js: tinymce/plugins/autoresize/plugin.js
+tinymce/plugins/textpattern/plugin.js: tinymce/plugins/textpattern/plugin.js
+tinymce/plugins/link/plugin.js: tinymce/plugins/link/plugin.js
+tinymce/plugins/print/plugin.js: tinymce/plugins/print/plugin.js
+tinymce/plugins/media/plugin.js: tinymce/plugins/media/plugin.js
+tinymce/plugins/advlist/plugin.js: tinymce/plugins/advlist/plugin.js
+tinymce/plugins/noneditable/plugin.js: tinymce/plugins/noneditable/plugin.js
+tinymce/plugins/example_dependency/plugin.js: tinymce/plugins/example_dependency/plugin.js
+tinymce/plugins/contextmenu/plugin.js: tinymce/plugins/contextmenu/plugin.js
+tinymce/plugins/directionality/plugin.js: tinymce/plugins/directionality/plugin.js
+tinymce/plugins/colorpicker/plugin.js: tinymce/plugins/colorpicker/plugin.js
+tinymce/plugins/pagebreak/plugin.js: tinymce/plugins/pagebreak/plugin.js
+tinymce/plugins/lists/plugin.js: tinymce/plugins/lists/plugin.js
+tinymce/plugins/hr/plugin.js: tinymce/plugins/hr/plugin.js
+tinymce/plugins/save/plugin.js: tinymce/plugins/save/plugin.js
+tinymce/plugins/visualchars/plugin.js: tinymce/plugins/visualchars/plugin.js
+tinymce/plugins/code/plugin.js: tinymce/plugins/code/plugin.js
+tinymce/plugins/searchreplace/plugin.js: tinymce/plugins/searchreplace/plugin.js
+tinymce/plugins/charmap/plugin.js: tinymce/plugins/charmap/plugin.js
+tinymce/tinymce.js: tinymce/tinymce.js
+tinymce/skins/lightgray/skin.ie7.min.css: tinymce/skins/lightgray/skin.ie7.min.css
+tinymce/skins/lightgray/skin.min.css: tinymce/skins/lightgray/skin.min.css
+tinymce/skins/lightgray/content.inline.min.css: tinymce/skins/lightgray/content.inline.min.css
+tinymce/skins/lightgray/content.min.css: tinymce/skins/lightgray/content.min.css
+>>>>>>> 95dd7409f324cd6387f9de332b68998284e0e953

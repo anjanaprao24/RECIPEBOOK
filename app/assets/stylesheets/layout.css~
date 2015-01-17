@@ -105,19 +105,43 @@ body {
 	position:relative;
       
 }
+<<<<<<< HEAD
 #container {
 	margin:0 auto;
 	width:1176px;
        box-shadow: 0 0 10px #000
       
 }
+=======
+	
+
+#page {
+	background: transparent url( '/assets/css/page-bg.jpg') no-repeat center top;
+}
+
+
+					
+
+#container {
+	margin:0 auto;
+	width:880px;
+      
+    box-shadow: 0 0 10px #000
+      
+}
+
+
+>>>>>>> 95dd7409f324cd6387f9de332b68998284e0e953
 #banner {
 	margin: 0 auto;
 	height:200px;
 	width:100%;
+<<<<<<< HEAD
         background-image: url("/assets/css/banner.jpg");
         background-repeat:no-repeat;
         background-position:left top;
+=======
+>>>>>>> 95dd7409f324cd6387f9de332b68998284e0e953
 }
 
 					
@@ -126,7 +150,10 @@ body {
 	height:50px;
 	margin:0 auto ;
 	text-align:center;
+<<<<<<< HEAD
         background: url("/assets/css/hmenu.jpg");
+=======
+>>>>>>> 95dd7409f324cd6387f9de332b68998284e0e953
 }
 
 #nav1 ul {
