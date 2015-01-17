@@ -1,0 +1,25 @@
+theme_advanced_toolbar_location: top
+theme_advanced_toolbar_align: left
+theme_advanced_statusbar_location: bottom
+
+
+width: 550
+height: 400
+insertdate_dateformat: "%Y-%m-%d"
+theme_advanced_buttons1 :
+  - fontsizeselect
+theme_advanced_buttons2 :
+  - bold
+  - italic
+  - underline
+  - emoticons
+plugins :
+   - preview
+   - autolink
+   - link
+   - table
+   - image
+   - paste
+   - insertdatetime
+   - spellchecker
+   - wordcount

@@ -1,0 +1,15 @@
+
+<div class="wrapper">
+     <div id="pics">
+      <% @new_recipe.each do |recipe| %>
+ 
+     <img src="<%= recipe.pic %>" title="<%= recipe.item_name %>" /> 
+     
+      <% end %>
+     </div>
+<div class="ribbon-wrapper-green">
+<div class="ribbon-green">NEW</div>
+   </div>
+ </div>    
+        
+    

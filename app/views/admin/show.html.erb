@@ -1,0 +1,13 @@
+<hr>
+<ol class="breadcrumb">
+<li><a href="/admin/categories">< Choose Category</a></li>
+
+</ol>
+<p id="notice"><%= notice %></p>
+
+<%= render 'panel' %>
+
+<b>Name:</b>
+<%= @item.item_name %><br><br>
+<b>Pic:</b>  <%= image_tag(@item.pic.url) %><br><br>
+<b>Description:</b> <%= @item.description %><br><br>

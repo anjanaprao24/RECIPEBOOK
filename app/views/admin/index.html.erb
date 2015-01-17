@@ -1,0 +1,19 @@
+<%= render 'dashboard' %> <h1>Recipies</h1>
+
+<table>
+  
+
+<% @items.each do |item| %>
+  <tr>
+   <ul>
+    <td>
+    <li><h3><%= link_to "#{item.item_name}" , item_path(item.id) %></h3></li>
+   </td>
+   </ul>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
