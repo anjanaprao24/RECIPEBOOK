@@ -1,0 +1,18 @@
+<h1>Listing Categories</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  
+  </tr>
+
+<% @categories.each do |category| %>
+  <tr>
+    <td><%= link_to "#{category.name}" , items_path(:id => category.id) %></td>
+     </tr>
+<% end %>
+</table>
+
+<br />
+
+
