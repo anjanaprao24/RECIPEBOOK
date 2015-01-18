@@ -297,26 +297,7 @@ a img {
     color: black;
 }
 
-@media screen and (min-width: 240px) and (max-width: 320px)
-{
-    input#search
-    {
-        position: absolute;
-        left: -180px;
-    }
-    button#search_btn
-    {
-        position: relative;
-        left: 15px;
-        top: 0px;
-    }
-    div#right
-    {
-        position: absolute;
-        top: 400px;
-        left: 680px;
-    }
-}
+
 
 @media screen and (min-width: 1024px) and (max-width: 1280px)
 {
@@ -353,13 +334,13 @@ a img {
     }
 }
 
-@media screen and (min-width:320px) and (max-width:768px)
+@media screen and (min-width:320px) and (max-width:767px)
 {
     div#footerWrapper
     {
         position: relative;
         top: 168px;
-        left: -24px;
+        left: 272px;
         width: 877px;
         text-align: center;
     }
@@ -370,7 +351,7 @@ a img {
     div#sidebar
     {
         position: absolute;
-        left: -192px;
+        left: 198px;
         top: 92px;
         width: 180px;
     }
@@ -378,34 +359,34 @@ a img {
     {
         position: aboulte;
         top: 30px;
-        left: -189px;
+        left: 59px;
     }
     button#search_btn
     {
         position: absolute;
         top: 30px;
-        left: 36px;
+        left: 296px;
     }
 }
 
-@media screen and (min-width:769px) and (max-width:1024px)
+@media screen and (min-width:768px) and (max-width:1023px)
 {
     input#search
     {
         position: aboulte;
         top: 30px;
-        left: -145px;
+        left: 79px;
     }
     button#search_btn
     {
         position: relative;
-        left: 60px;
+        left: 289px;
         top: 2px;
     }
     div#sidebar
     {
         position: absolute;
-        left: -160px;
+        left: 32px;
         top: 95px;
         width: 180px;
     }
@@ -426,6 +407,7 @@ a img {
         top: 92px;
         width: 180px;
     }
+}
 @media screen and (min-width:1281px)and (max-width:1600px)
 {
     button#search_btn
@@ -449,3 +431,5 @@ a img {
         text-align: center;
     }
 }
+
+
