@@ -88,13 +88,10 @@
   -o-transform:      rotate(45deg);
   position: relative;
   padding: 7px 0;
-<<<<<<< HEAD
+
   left: 0px;
   top: 15px;
-=======
-  left: 351px;
-  top: -175px;
->>>>>>> ce4c96613381d77398b3cc7d9d721e440f137f27
+
   width: 120px;
    opacity:1;
   background-color: #BFDC7A;
