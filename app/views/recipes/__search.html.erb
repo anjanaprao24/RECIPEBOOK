@@ -1,0 +1,21 @@
+<script>
+    $(document).ready(function() {
+        var availableTags = <%= Item.all.map(&:item_name).to_json.html_safe %>;
+        $("#search" ).autocomplete({
+            source: availableTags
+        });
+    });
+</script>
+
+<%= form_tag("/items" , :method=>"get" ) do   %>
+    <div class="col-xs-4">
+
+   <input type="search" name="search" id="search"  class="form-control" placeholder="Search Products"/>
+
+      <div class="btn-group-sm">
+        <button type="submit" class="btn btn-warning" id="search_btn">SEARCH</button>
+      </div>
+    </div>
+<% end %>
+
+

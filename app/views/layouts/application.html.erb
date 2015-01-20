@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RecipeBook</title>
+<meta name="viewport" content="width=device-width"> 
+<%= stylesheet_link_tag    "application", :media => "all" , "data-turbolinks-track" => true %>
+<%= javascript_include_tag "application" , :media => "all" , "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<link id="theme" rel="stylesheet" type="text/css" href="layout.css" title="theme" />
+</head>
+<body> 
+<div id="wrapper"> 
+<div id="bg"> 
+<div id="header"></div>  
+<div id="page"> 
+<div id="container"> 
+<!-- banner -->  
+<div id="banner"></div>  
+<!-- end banner -->  
+<!-- horizontal navigation -->  
+<div id="nav1"> 
+<ul>
+<li  style="border:none">
+<a href="/recipes/home" shape="rect">Home</a>
+</li>
+<li>
+<a href="/recipes/view_category" shape="rect">Categories</a>
+</li>
+<li>
+<a href="/items/_dashboard" shape="rect">Recipies</a>
+</li>
+<li>
+<a href="/recipes/my_recipe" shape="rect">My Recipies</a>
+</li>
+<li>
+<a href="/recipes/profile" shape="rect">Profile</a>
+</li>
+</ul> 
+</div>  
+<!-- end horizontal navigation -->  
+<!--  content -->  
+<div id="content"> 
+<div id="center"> 
+<div id="welcome"> 
+
+
+<div id="user_nav">
+<% if !current_user %>
+<h5>Welcome , <%= link_to "Log-in" , new_user_session_path %> or <%= link_to "Sign-up" , new_user_registration_path %></h5>
+<% else %>
+<h4> Welcome , <%= current_user.email %> <%= link_to "LOGOUT" , destroy_user_session_path , :method=> :delete %></h4>
+<% end %>
+<p class="notice"><%= notice %></p>
+<p style="color:red"><%= alert %></p><br>
+<%= yield %>
+
+</div>
+<div id="search_form">
+<%= render 'recipes/_search' %>
+</div>
+
+<p style="clear:both" /> 
+</div> 
+</div>  
+<div id="right"> 
+<div id="sidebar"><h3>Categories</h3>
+ <ul class="vmenu"> 
+  <% @category = Category.all %>
+  <% @category.each do |cat| %>  
+ <li>
+ <a href="#" shape="rect"><%= link_to "#{cat.name}",  list_recipe_items_path(:id => cat.id) %> </a>
+ </li>
+ <% end %>
+ </ul>  
+
+</div> 
+</div> 
+</div>  
+<div class="clear" style="height:40px"></div> 
+</div>  
+<!-- end content --> 
+</div>  
+<!-- end container --> 
+</div> 
+ <br><br>
+<div id="footerWrapper"> 
+<div id="footer"> 
+<p style="padding-top:10px"> 
+Recipe book &copy; 2013-2014
+</p> 
+</div> 
+</div> 
+</div> 
+</div> 
+</body>
+</html>

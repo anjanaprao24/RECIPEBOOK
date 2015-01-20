@@ -1,0 +1,15 @@
+<% if @recipe.nil? %>
+<h2> No recipies Yet </h2>
+<% end %>
+<% if current_user %>
+<h2> My Recipies </h2>
+<ul>
+<% @recipe.each do |recipe| %>
+<h3>
+<li><%= link_to "#{recipe.item_name}" , item_path(:id => recipe) %></li>
+</h3>
+<% end %>
+</ul>
+<% else %>
+<p class="notice"> Log in to create recipe ! </p>
+<% end %>

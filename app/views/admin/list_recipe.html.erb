@@ -1,0 +1,14 @@
+<h2> <%= @category.name  %> Recipies </h2>
+<h4>
+
+<ul class="vmenu">
+
+<% @recipe.each do |recipe| %>
+<li>
+ <%= link_to "#{recipe.item_name}" , admin_path(recipe.id) %> </a>
+</li>
+<% end %>
+
+</ul>
+
+</h4>

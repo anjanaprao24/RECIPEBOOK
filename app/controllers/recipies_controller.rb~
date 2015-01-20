@@ -1,0 +1,55 @@
+class RecipesController < ApplicationController
+
+
+def home
+    @new_recipe=Item.find(:all , :order => "created_at DESC", :limit => 3)
+    
+end
+
+def view_category
+  @categories= Category.all
+end
+
+def view_recipe
+  @item= Item.all
+end
+
+
+ def search
+   @items = Item.find_by_item_name(params[:search])
+
+ end
+
+ def like_count
+  item = Item.find(params[:id])
+  item.increment(:likes)
+  item.save
+  redirect_to :action=>'show' , :id=>item
+end
+
+
+
+def my_recipe
+  if current_user
+ @recipe = Item.where(:user_id => current_user.id)
+end
+end
+
+def profile
+
+ if !current_user
+  redirect_to home_recipes_path , :notice=>"Log in to view profile!"
+ end
+end
+
+def updateprofile
+ @email=params[:email]
+ @address=params[:address]
+ @hobbies=params[:hobbies]
+ @pic=params[:pic]
+ @user= User.where(:id => current_user.id)
+ @user.update_attributes(:hobbies=>@hobbies , :address=>@address , :email=>@email)
+ @user.save
+ end
+
+end

@@ -1,0 +1,30 @@
+<%= render 'dashboard' %> <h1>Recipies</h1>
+
+<% @items.each do |item| %>
+<div id="recipe_list">
+<table>
+
+<tr>
+<th><%= image_tag item.pic.url(:thumb)%></th> 
+<td>&nbsp;</td> <td>&nbsp;</td> 
+<td><h2 class="item_name"><td><b><%= link_to "#{item.item_name}" , item_path(item.id) %></h2></b>
+<h5>
+<% @user=User.where(:id=>item.user_id) %>
+<% @user.each do |user| %>
+<%= user.email %>
+<% end %>
+</h5>
+<i><%= item.created_at.to_s %></i></td>
+</tr>
+<tr><th>&nbsp;</th><td>&nbsp;</td></tr>
+</table>
+
+ <div class="social-icons">
+  Share recipe
+ <button onclick="document.location.href='<%= item_path(item.id)%>'"> <img src="/assets/gmail.png" /></button>
+ </div>
+</div>  
+<% end %>
+<br />
+
+
