@@ -1,0 +1,2 @@
+module AdminRecipiesHelper
+end

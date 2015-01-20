@@ -1,0 +1,14 @@
+<% if @recipe.empty? %>
+<h2> No recipies Yet </h2>
+<% end %>
+
+<h2> My Recipies </h2>
+
+<ul>
+<% @recipe.each do |recipe| %>
+
+<h3>
+<li><%= link_to "#{recipe.item_name}" , admin_path(:id => recipe) %></li>
+</h3>
+<% end %>
+</ul>

@@ -1,0 +1,32 @@
+<%= tinymce_assets %><%= tinymce %> <%= form_for @item , :url => admin_path(@item) , :method=>"put", :html => { :multipart => true } do |f| %>
+  <% if @item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+      <% @item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+   <div class="field">
+    <%= f.label :category %><br />
+    <%= collection_select(:item, :category_id, Category.all, :id, :name, {:prompt => false })  %>
+   </div>
+  <div class="field">
+    <%= f.label :item_name %><br />
+    <%= f.text_field :item_name %>
+  </div>
+ <div class="field">
+    <%= f.label :pic %><br />
+    <%= f.file_field :pic %>
+  </div>
+ <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description , :class=>"tinymce", :rows=>9 , :cols=>29 %>
+  </div>
+   <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
